@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using Gaming.GameService;
+using Gaming.GameService.DataType;
 
 namespace Gaming.GameService.Test
 {
@@ -16,7 +16,7 @@ namespace Gaming.GameService.Test
         [Fact]
         public void Test1()
         {
-            _gameService.GetRandomGame();
+            Game randomGame =_gameService.GetRandomGame();
 
             Assert.True(true);
         }

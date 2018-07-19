@@ -32,18 +32,18 @@ namespace Gaming.GameService
 
         private static async Task<int> GetGamesTotal()
         {
-            var serializer = new DataContractJsonSerializer(typeof(GameCount));
+            var serializer = new DataContractJsonSerializer(typeof(Response));
 
             var streamTask = _client.GetStreamAsync("https://api-endpoint.igdb.com/games/count");
-            var response = serializer.ReadObject(await streamTask) as GameCount;
+            Response response = serializer.ReadObject(await streamTask) as Response;
 
-            return response.count;
+            return response.Count;
         }
 
         private static async Task<Game> GetGameInfo(int gameId)
         {
 
-            var serializer = new DataContractJsonSerializer(typeof(List<Game>));
+            var serializer = new DataContractJsonSerializer(typeof(List<object>));
 
             var streamTask = _client.GetStreamAsync($"https://api-endpoint.igdb.com/games/{gameId}");
             List<Game> games = serializer.ReadObject(await streamTask) as List<Game>;

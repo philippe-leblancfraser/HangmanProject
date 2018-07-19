@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServiceLibrary", "GameInformationLibrary\GameServiceLibrary.csproj", "{2DB969A0-7234-4F55-95E3-3BD9E579EBCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameServiceLibrary", "GameInformationLibrary\GameServiceLibrary.csproj", "{2DB969A0-7234-4F55-95E3-3BD9E579EBCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{110C8925-DDCB-4196-A078-A515C682C260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameService.Test", "GameInformation.Test\GameService.Test.csproj", "{DB4B9588-8A80-4FB9-AB67-06815793F516}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameService.Test", "GameInformation.Test\GameService.Test.csproj", "{DB4B9588-8A80-4FB9-AB67-06815793F516}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

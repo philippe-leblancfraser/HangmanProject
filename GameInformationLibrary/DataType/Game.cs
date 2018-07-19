@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace Gaming.GameService.DataType
 {
+    [DataContract]
     public class Game
     {
-        public string name;
+        [DataMember(Name="name")]
+        public string Name { get; set; }
 
-        public Game()
-        {
-        }
+        [DataMember(Name = "summary")]
+        public string Summary { get; set; }
+
     }
 }
