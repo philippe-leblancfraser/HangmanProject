@@ -1,22 +1,25 @@
 using System;
 using Xunit;
-using Gaming.GameService.DataType;
+using GamingService;
+using GamingService.DataType;
 
-namespace Gaming.GameService.Test
+namespace GamingService.Test
 {
     public class UnitTest1
     {
-        private readonly GameInformation _gameService;
+        private readonly GameService _gameService;
 
         public UnitTest1()
         {
-            _gameService = new GameInformation();
+            _gameService = new GameService();
         }
 
         [Fact]
         public void Test1()
         {
             Game randomGame =_gameService.GetRandomGame();
+
+            Console.WriteLine(randomGame.Name);
 
             Assert.True(true);
         }
