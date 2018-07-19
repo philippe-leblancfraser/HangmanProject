@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Gaming.GameService
 {
-    interface IGameService
+    interface IGameInformation
     {
     }
 }

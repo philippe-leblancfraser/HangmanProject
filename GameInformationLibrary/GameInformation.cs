@@ -9,11 +9,11 @@ using System.Linq;
 
 namespace Gaming.GameService
 {
-    public class GameService : IGameService
+    public class GameInformation : IGameInformation
     {
         private static readonly HttpClient _client;
 
-        static GameService()
+        static GameInformation()
         {
             _client = new HttpClient();
 

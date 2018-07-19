@@ -6,11 +6,11 @@ namespace Gaming.GameService.Test
 {
     public class UnitTest1
     {
-        private readonly GameService _gameService;
+        private readonly GameInformation _gameService;
 
         public UnitTest1()
         {
-            _gameService = new GameService();
+            _gameService = new GameInformation();
         }
 
         [Fact]
