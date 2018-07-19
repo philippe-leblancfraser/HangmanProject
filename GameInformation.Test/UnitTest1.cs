@@ -17,7 +17,7 @@ namespace GamingService.Test
         [Fact]
         public void Test1()
         {
-            Game randomGame =_gameService.GetRandomGame();
+            Game randomGame =_gameService.GetRandomGame().GetAwaiter().GetResult();
 
             Console.WriteLine(randomGame.Name);
 

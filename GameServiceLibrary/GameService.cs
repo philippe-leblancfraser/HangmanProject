@@ -22,13 +22,12 @@ namespace GamingService
             _client.DefaultRequestHeaders.Add("user-key", "5cc15a0dae92c96dac73170039803bf9");
         }
 
-        public Game GetRandomGame()
+        public async Task<Game> GetRandomGame()
         {
             int maxCount = GetGamesTotal().GetAwaiter().GetResult();
             int randomID = new Random().Next(1, maxCount);
 
-            Game response = GetGameInfo(randomID).GetAwaiter().GetResult();
-            return response;
+            return await GetGameInfo(randomID);
         }
 
         private static async Task<int> GetGamesTotal()
